@@ -3,7 +3,7 @@ import os
 import atexit
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from main import main  # Import main function from main.py
+from main import main
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from Plugins.database import get_latest_session_id, create_new_session, get_or_create_daily_session,chat_buffer, commit_chat_buffer
