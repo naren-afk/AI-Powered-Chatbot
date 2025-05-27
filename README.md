@@ -28,3 +28,37 @@ A fully functional **AI-powered chatbot** with a voice-enabled interface and web
 
 ## 📁 Project Structure
 
+FINAL WORKING PROJECT/
+├── app.py # Flask app entry point
+├── main.py # Core logic controller
+├── frontend/ # Static frontend assets
+│ ├── index.html
+│ ├── dashboard.html
+│ ├── styles.css
+│ ├── dashboard.css
+│ ├── script.js
+│ ├── dashboard.js
+│ ├── mic.png
+│ └── wave.gif
+├── Data/ # Storage or logs (if any)
+├── Plugins/ # Additional feature modules
+
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Python 3.8+
+- pip
+- Flask
+- Optional: pyttsx3, vosk, etc.
+
+### 📦 Installation
+
+1. **Clone the repository:**
+
+  ```bash
+      git clone https://github.com/naren-afk/AI-Powered-Chatbot.git
+      cd AI-Powered-Chatbot/FINAL\ WORKING\ PROJECT
