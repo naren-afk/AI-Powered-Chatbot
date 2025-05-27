@@ -1,0 +1,149 @@
+/* General Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensure the content is spaced between the navbar and the mic button */
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjusted to be inside the window */
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Assistant Container */
+#assistantContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Adjusted to fit within the screen */
+    max-width: 600px;
+    margin-top: 100px; /* Adjusted to provide space below the navbar */
+    flex-grow: 1; /* Ensure it takes up available space */
+}
+
+/* Welcome Text */
+#welcomeText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Chat Box */
+#chatBox {
+    text-align: left;
+    width: 120%;
+    max-width: 200%; /* Adjusted to fit within the container */
+    height: 500px; /* Set a fixed height for the chat box */
+    overflow-y: auto; /* Make it scrollable if content exceeds the height */
+    padding: 10px;
+    font-size: 20px; 
+    font-weight: bold;
+    border: 1px solid #444; /* Optional: add a border to distinguish the chat box */
+    border-radius: 8px; /* Optional: rounded corners for the chat box */
+    margin-bottom: 20px; /* Space below the chat box */
+    white-space: pre-wrap; /* This ensures that the response is displayed as it is */
+    word-wrap: break-word; /* Prevents long words from breaking the layout */
+}
+
+/* User Message */
+.user {
+    color: cadetblue; 
+    font-weight: bold;
+    text-align: right;
+    margin: 5px 0;
+}
+
+/* AI Response */
+.ai {
+    color: white;
+    text-align: left;
+    margin: 5px 0;
+}
+
+/* Typing Animation */
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    animation: typing 0.05s steps(10, end), blink 0.05s step-end infinite;
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: white; }
+}
+
+/* Wave Animation */
+#waveAnimation {
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Microphone Button */
+#micButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjusted to space it from the chat container */
+}
+
+#micButton img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+/* Remove horizontal scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}

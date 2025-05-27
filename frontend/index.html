@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">AI Voice Assistant</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="assistantContainer">
+        <div id="welcomeText">What can I help you with today?</div>
+
+        <!-- Invisible Chat Box (Correctly Sized) -->
+        <div id="chatBox" class="hidden"></div>
+
+        <!-- Listening Wave Animation -->
+        <img id="waveAnimation" src="wave.gif" alt="Listening..." class="hidden">
+
+        <!-- Mic Button -->
+        <button id="micButton">
+            <img src="mic.png" alt="Microphone">
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
