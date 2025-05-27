@@ -25,7 +25,7 @@ def auto_save_buffer():
 threading.Thread(target=auto_save_buffer, daemon=True).start()
 
 def ensure_session_exists():
-    print("🔍 Checking for existing session...")  # Debugging step
+    print("Checking for existing session...")  # Debugging step
     session_id = get_latest_session_id()
     
     if session_id:
@@ -186,7 +186,7 @@ atexit.register(commit_chat_buffer)
 @app.before_request
 def setup():
     """Runs before handling any request (Flask 2.3+ safe)."""
-    print("🔄 Server started. Chat buffering enabled.")
+    print("Server started. Chat buffering enabled.")
 
 
 @app.teardown_appcontext
