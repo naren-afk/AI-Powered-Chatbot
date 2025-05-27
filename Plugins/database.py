@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timedelta
 
 # Define database path
-db_path = "C:/Users/Naren kumar/Desktop/ai_assist/Final project/Data/chats.db"
+db_path = "DB_PATH"
 
 # Ensure database directory exists
 os.makedirs(os.path.dirname(db_path), exist_ok=True)
